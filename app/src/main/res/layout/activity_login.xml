@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:paddingTop="40dp"
+    tools:context=".activities.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/login_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/insta" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint=" Username" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/password"
+                android:hint=" Password" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="login"
+                android:textStyle="bold"
+                android:background="#C900FF"
+                android:textColor="@android:color/white"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="¿Olvidaste tu contraseña?"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:src="@drawable/linea"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/transparent"
+                    android:text="¿Eres nuevo? Registrate"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

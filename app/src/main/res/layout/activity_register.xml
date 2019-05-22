@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:context=".activities.RegisterActivity"
+    android:paddingTop="40dp">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/login_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/fullname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/person"
+                android:hint=" Ingrese username" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint=" Ingrese email" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/password"
+                android:hint=" Ingrese password" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/aceptar_cbx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto los terminos y condiciones"
+                android:backgroundTint="#fff"
+                android:textColorHint="#fff"
+                android:drawableTint="#fff"
+                android:buttonTint="#fff"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:onClick="verificar"/>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:textStyle="bold"
+                android:background="#C900FF"
+                android:textColor="@android:color/white"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
